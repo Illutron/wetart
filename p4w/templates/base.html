@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <title>{% block title %}p4w{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+
+    <link href="{{ STATIC_URL }}stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="{{ STATIC_URL }}stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+</head>
+
+<body class="bp {% block body-class %}{% endblock %}">
+<div id="container">
+
+    <header>
+        <h1>wetart</h1>
+        <section id="intro">
+            <hgroup>
+                <h2><em><a href="http://platform4.dk">Platform4</a></em> and <em><a href="http://illutron.dk">Illutron</a></em> presents:</h2>
+                <h3>June 20 to 26</h3>
+                <h1>Wet Art 2011</h1>
+                <h4>A collaborative workshop <br>about <em>interactive art</em> and <em>technology</em> <br>on <em>floating</em> platforms</h4>
+                <h5><br>at <em>Platform 4</em> in Aalborg <br> by Limfjorden</h5>
+            </hgroup>
+        </section>
+        <nav>
+            <ul>
+                <li>program</li>
+                <li>people</li>
+                <li>projects</li>
+                <li>participate</li>
+        </nav>
+    </header>
+
+    <section id="content">
+    {% block content %}
+
+    {% endblock %}
+    </section>
+
+
+    <footer>
+        <ul>
+            <li><a href="#container">to top</a></li>
+            <li><a href="http://illutron.dk">Illutron</a></li>
+            <li><a href="http://platform4.dk">Platform 4</a></li>
+            <li>johan@illutron.dk</li>
+        </ul>
+
+
+    </footer>
+
+</div>
+
+</body>
+</html>

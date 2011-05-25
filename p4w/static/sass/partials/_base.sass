@@ -1,0 +1,28 @@
+@import "blueprint/reset"
+@import "blueprint"
+@import "blueprint/scaffolding"
+@import "compass/layout/grid-background"
+@import "compass/typography/vertical_rhythm"
+@import "compass/css3/border-radius"
+
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+$blueprint-grid-columns   : 12
+$blueprint-container-size : 475px
+$blueprint-grid-margin    : 10px
+
+$content-columns: 16
+$sidebar-columns: 7
+// Use this to calculate the width based on the total width.
+// Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
+
+// fix for displaying html5 block elements
+section, header, footer, aside, article, hgroup
+  display: block
+
+$blueprint-font-size: 12px
+$base-font-size: $blueprint-font-size
+$base-line-height: 18px // 12 * 1.5 (line-height defined by blueprint-typography)
+$default-rhythm-border-style: dashed

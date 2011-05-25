@@ -1,0 +1,4 @@
+.idea
+*.pyc
+.sass-cache/
+local_settings.py
