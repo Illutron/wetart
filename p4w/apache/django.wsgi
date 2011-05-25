@@ -1,10 +1,10 @@
 import os
 import sys
 
-sys.path.append('/home/wwl/srv')
-sys.path.append('/home/wwl/srv/cakewriter')
+sys.path.append('/home/johan/srv')
+sys.path.append('/home/johan/srv/wetart/p4w')
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'cakewriter.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'p4w.settings'
 
 import django.core.handlers.wsgi
 
