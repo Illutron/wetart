@@ -48,9 +48,6 @@ STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = '2)tr*#h(_gkxylyfbh!8y9@$wlabd*1n5^a$x02=1pq7+h'
-
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
@@ -112,3 +109,9 @@ LOGGING = {
         },
     }
 }
+
+try:
+    execfile(BASE_PATH + '/settings_local.py')
+except IOError:
+    sys.stderr.write("\nYou need to copy settings_local.example to settings_local.py and customize it.\n")
+    sys.exit(1)
