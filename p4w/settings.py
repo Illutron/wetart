@@ -1,10 +1,30 @@
 # coding=utf-8
-import os.path, sys, re
+import os.path
+import sys
+import platform
+
+
+PRODUCTION_HOSTNAME = "tango"
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+DEVELOPMENT_MODE = (platform.node() != PRODUCTION_HOSTNAME)
 
-DEBUG = True
+if DEVELOPMENT_MODE:
+    DEBUG = True
+    MEDIA_URL = '/m/'
+else
+    DEBUG = False
+    MEDIA_URL = 'http://static.wetart.dk/'
+    ADMIN_MEDIA_PREFIX = MEDIA_URL + '/admin/'
+
 TEMPLATE_DEBUG = DEBUG
+
+# Static files
+MEDIA_ROOT = BASE_PATH + '/media'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    BASE_PATH + '/static',
+)
 
 ADMINS = (
     ('Johan Bichel Lindegaard', 'sysadmin@tango.johan.cc'),
@@ -29,16 +49,6 @@ LANGUAGE_CODE = 'en'
 SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
-
-# Static files
-MEDIA_ROOT = BASE_PATH + '/media'
-MEDIA_URL = '/media/'
-ADMIN_MEDIA_PREFIX = '/static/admin/'
-STATIC_ROOT = '/static/admin/'
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    BASE_PATH + '/static',
-)
 
 # List of finder classes that know how to find static files in
 # various locations.
