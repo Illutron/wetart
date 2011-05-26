@@ -12,7 +12,7 @@ DEVELOPMENT_MODE = (platform.node() != PRODUCTION_HOSTNAME)
 if DEVELOPMENT_MODE:
     DEBUG = True
     MEDIA_URL = '/m/'
-else
+else:
     DEBUG = False
     MEDIA_URL = 'http://static.wetart.dk/'
     ADMIN_MEDIA_PREFIX = MEDIA_URL + '/admin/'
