@@ -10,20 +10,20 @@
       <link href="{{ STATIC_URL }}stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 
+    <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body class="bp {% block body-class %}{% endblock %}">
 <div id="container">
 
-    <header>
-        <h1>wetart</h1>
+    <header id="site-header">
         <section id="intro">
             <hgroup>
                 <h2><em><a href="http://platform4.dk">Platform4</a></em> and <em><a href="http://illutron.dk">Illutron</a></em> presents:</h2>
                 <h3>June 20 to 26</h3>
                 <h1>Wet Art 2011</h1>
                 <h4>A collaborative workshop <br>about <em>interactive art</em> and <em>technology</em> <br>on <em>floating</em> platforms</h4>
-                <h5><br>at <em>Platform 4</em> in Aalborg <br> by Limfjorden</h5>
+                <h5><br>at <em>Platform 4</em> in Aalborg</h5>
             </hgroup>
         </section>
         <nav>
@@ -42,15 +42,15 @@
     </section>
 
 
-    <footer>
-        <ul>
-            <li><a href="#container">to top</a></li>
-            <li><a href="http://illutron.dk">Illutron</a></li>
-            <li><a href="http://platform4.dk">Platform 4</a></li>
-            <li>johan@illutron.dk</li>
-        </ul>
-
-
+    <footer id="site-footer">
+        <nav>
+            <ul>
+                <li><a href="#container">to top</a></li>
+                <li><a href="http://illutron.dk">Illutron</a></li>
+                <li><a href="http://platform4.dk">Platform 4</a></li>
+                <li><a href="mailto:johan@illutron.dk">johan@illutron.dk</a></li>
+            </ul>
+        </nav>
     </footer>
 
 </div>

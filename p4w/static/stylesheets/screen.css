@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Aclonica");
 /* line 4, ../../../../../.gem/ruby/1.8/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
   margin: 0;
@@ -57,18 +58,53 @@ a img {
   border: none;
 }
 
-/* line 22, ../sass/partials/_base.sass */
+/* line 24, ../sass/partials/_base.sass */
 section, header, footer, aside, article, hgroup {
   display: block;
 }
 
 /* line 1, ../sass/partials/_index.sass */
-section#intro {
+header#site-header {
   text-align: center;
 }
-/* line 3, ../sass/partials/_index.sass */
-section#intro h1 {
+/* line 4, ../sass/partials/_index.sass */
+header#site-header section#intro h1 {
   font-size: 6em;
+  font-weight: bold;
+  font-family: Aclonica;
+}
+/* line 9, ../sass/partials/_index.sass */
+header#site-header nav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+/* line 12, ../sass/partials/_index.sass */
+header#site-header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 16, ../sass/partials/_index.sass */
+header#site-header nav ul li {
+  display: inline;
+  margin: 0 0.75em;
+}
+
+/* line 22, ../sass/partials/_index.sass */
+footer#site-footer {
+  border-top: 1px dashed black;
+}
+/* line 25, ../sass/partials/_index.sass */
+footer#site-footer nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 30, ../sass/partials/_index.sass */
+footer#site-footer nav ul li {
+  display: inline;
+  margin-right: 0.75em;
 }
 
 /* line 5, ../sass/screen.sass */
