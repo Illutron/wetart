@@ -12,16 +12,17 @@ DEVELOPMENT_MODE = (platform.node() != PRODUCTION_HOSTNAME)
 if DEVELOPMENT_MODE:
     DEBUG = True
     MEDIA_URL = '/m/'
+    STATIC_URL = '/static/'
 else:
     DEBUG = False
-    MEDIA_URL = 'http://static.wetart.dk/'
+    MEDIA_URL = 'http://static.wetart.dk/m/'
+    STATIC_URL = 'http://static.wetart.dk/'
     ADMIN_MEDIA_PREFIX = MEDIA_URL + '/admin/'
 
 TEMPLATE_DEBUG = DEBUG
 
 # Static files
 MEDIA_ROOT = BASE_PATH + '/media'
-STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     BASE_PATH + '/static',
 )
