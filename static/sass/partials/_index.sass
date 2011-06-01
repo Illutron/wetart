@@ -1,0 +1,73 @@
+header#site-header
+  text-align: center
+  margin-top: 18px
+  section#intro
+    a.p4logo, a.ilogo
+      text-indent: -900em
+      display: inline-block
+      vertical-align: middle
+      height: 36px
+    a.p4logo
+      width: 217px
+      background: transparent url('../images/platform4_logo.png') center no-repeat
+    a.ilogo
+      width: 217px
+      background: #211e1f url('../images/illutron_logo.png') center no-repeat
+      +border-radius(3px)
+
+
+    h1
+      font-size: 6em
+      font-weight: bold
+      font-family: Aclonica
+
+  nav
+    border-top: 1px solid black
+    border-bottom: 1px solid black
+    ul
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        display: inline
+        margin: 0 0.75em
+        a
+
+section#images
+  +basesection
+  #flickrfeed
+    +column(12, true)
+    a
+      border: 8px solid transparent
+      padding: 0
+      display: block
+      width: 160px
+      overflow: hidden
+      height: 160px
+      float: left
+      text-align: center
+      &:hover
+        border-color: black
+
+section#news
+  +basesection
+  #twitterfeed
+    +column(12, true)
+
+section#program
+  +basesection
+
+section#participate
+  +basesection
+
+footer#site-footer
+  border-top: 1px dashed black
+  nav
+    ul
+      text-align: center
+      margin: 0
+      padding: 0
+      list-style: none
+      li
+        display: inline
+        margin: 0 0.75em

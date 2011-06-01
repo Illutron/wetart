@@ -19,9 +19,9 @@ if DEVELOPMENT_MODE:
     STATIC_URL = '/static/'
 else:
     DEBUG = False
-    MEDIA_URL = 'http://static.wetart.dk/m/'
+    MEDIA_URL = 'http://static.wetart.dk/'
     STATIC_URL = 'http://static.wetart.dk/'
-    ADMIN_MEDIA_PREFIX = MEDIA_URL + '/admin/'
+    ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -30,13 +30,6 @@ MEDIA_ROOT = BASE_PATH + '/media'
 STATICFILES_DIRS = (
     BASE_PATH + '/static',
 )
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'test.db',                      # Or path to database file if using sqlite3.
-    }
-}
 
 TIME_ZONE = 'Europe/Copenhagen'
 LANGUAGE_CODE = 'en'
@@ -68,7 +61,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'p4w.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     BASE_PATH + '/templates/'
@@ -86,8 +79,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

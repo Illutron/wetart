@@ -5,7 +5,7 @@ from django.conf.urls.defaults import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'p4w.views.index', name='index'),
+    url(r'^$', 'views.index', name='index'),
     # url(r'^p4w/', include('p4w.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

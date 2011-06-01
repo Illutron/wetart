@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-    <title>{% block title %}p4w{% endblock %}</title>
+    <title>{% block title %}Wet Art 2011{% endblock %}</title>
     <meta name="description" content="{% block description %}{% endblock %}">
 
     <link href="{{ STATIC_URL }}stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -10,7 +10,12 @@
       <link href="{{ STATIC_URL }}stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
 
+    <script src="{{ STATIC_URL }}js/lib/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/lib/jquery.tweet.js"></script>
+    <script src="{{ STATIC_URL }}js/base.js"></script>
+
     <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
 </head>
 
 <body class="bp {% block body-class %}{% endblock %}">
@@ -19,8 +24,8 @@
     <header id="site-header">
         <section id="intro">
             <hgroup>
-                <h2><em><a href="http://platform4.dk">Platform4</a></em> and <em><a href="http://illutron.dk">Illutron</a></em> presents:</h2>
-                <h3>June 20 to 26</h3>
+                <h3><em><a href="http://platform4.dk" class="p4logo">Platform4</a></em> &nbsp; and &nbsp; <em><a href="http://illutron.dk" class="ilogo">Illutron</a></em> <br><span class="small">presents</span></h3>
+                <h2>June 20 to 26</h2>
                 <h1>Wet Art 2011</h1>
                 <h4>A collaborative workshop <br>about <em>interactive art</em> and <em>technology</em> <br>on <em>floating</em> platforms</h4>
                 <h5><br>at <em>Platform 4</em> in Aalborg</h5>
@@ -28,10 +33,12 @@
         </section>
         <nav>
             <ul>
-                <li>program</li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#participate">Participate</a></li>
                 <li>people</li>
                 <li>projects</li>
-                <li>participate</li>
         </nav>
     </header>
 
@@ -45,9 +52,9 @@
     <footer id="site-footer">
         <nav>
             <ul>
-                <li><a href="#container">to top</a></li>
-                <li><a href="http://illutron.dk">Illutron</a></li>
-                <li><a href="http://platform4.dk">Platform 4</a></li>
+                <li><a href="#container">to top</a></li> |
+                <li><a href="http://illutron.dk">Illutron</a></li> |
+                <li><a href="http://platform4.dk">Platform 4</a></li> |
                 <li><a href="mailto:johan@illutron.dk">johan@illutron.dk</a></li>
             </ul>
         </nav>

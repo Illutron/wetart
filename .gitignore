@@ -2,3 +2,5 @@
 *.pyc
 .sass-cache/
 settings_local.py
+
+/.DS_Store

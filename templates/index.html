@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section id="images">
+    <h1>Images</h1>
+    <p>Tag your photos 'art on water' and 'illutron' on flickr.</p>
+
+    <div id="flickrfeed" class="loading">
+    </div>
+
+    <a href="api.flickr.com/services/feeds/photos_public.gne?tags=artonwater,illutron&lang=en-us&format=rss_200">Get the feed</a>
+
+</section>
+
+<section id="news">
+<h1>News</h1>
+<p>Tag your tweets <strong>#wetart</strong></p>
+<div id="twitterfeed" class="loading">
+
+</div>
+</section>
+
+
+<section id="program">
+<h1>Program</h1>
+<p>Coming soon...</p>
+<!--<h2>Monday</h2>
+<p>...</p>
+
+<h2>Tuesday</h2>
+<p>...</p>
+
+<h2>Wednesday</h2>
+<p>...</p>
+
+<h2>Thursday</h2>
+<p>...</p>
+
+<h2>Friday</h2>
+<p>...</p>
+
+<h2>Saturday</h2>
+<p>...</p>
+
+<h2>Sunday</h2>
+<p>...</p>-->
+</section>
+
+<section id="participate">
+    <h1>Participate</h1>
+    <p>Wet Art 2011 is an open workshop. Get in touch at <a href="mailto:johan@illutron.dk">johan@illutron.dk</a> if you have questions or want to join.</p>
+</section>
+
+{% endblock %}
