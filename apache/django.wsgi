@@ -2,7 +2,7 @@ import os
 import sys
 import site
 
-site.addsitedir('/home/wetart/.virtualenvs/wetart/lib/python2.6/site-packages')
+site.addsitedir('/home/wetart/.virtualenvs/wetart/lib/python2.7/site-packages')
 
 sys.path.append('/home/wetart/srv/')
 sys.path.append('/home/wetart/srv/wetart/')
