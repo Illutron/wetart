@@ -22,7 +22,6 @@
 <div id="container">
 
     <header id="site-header">
-        <section id="intro">
             <hgroup>
                 <h3><em><a href="http://platform4.dk" class="p4logo">Platform4</a></em> &nbsp; and &nbsp; <em><a href="http://illutron.dk" class="ilogo">Illutron</a></em> <br><span class="small">presents</span></h3>
                 <h2>June 20 to 26</h2>
@@ -30,9 +29,9 @@
                 <h4>A collaborative workshop <br>about <em>interactive art</em> and <em>technology</em> <br>on <em>floating</em> platforms</h4>
                 <h5><br>at <em>Platform 4</em> in Aalborg</h5>
             </hgroup>
-        </section>
         <nav>
             <ul>
+                <li><a href="#about">About</a></li>
                 <li><a href="#images">Images</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#program">Program</a></li>
@@ -42,11 +41,11 @@
         </nav>
     </header>
 
-    <section id="content">
+    <div id="content">
     {% block content %}
 
     {% endblock %}
-    </section>
+    </div>
 
 
     <footer id="site-footer">
@@ -61,6 +60,18 @@
     </footer>
 
 </div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1326629-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
 </body>
 </html>

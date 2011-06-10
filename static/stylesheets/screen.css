@@ -69,19 +69,19 @@ header#site-header {
   margin-top: 18px;
 }
 /* line 5, ../sass/partials/_index.sass */
-header#site-header section#intro a.p4logo, header#site-header section#intro a.ilogo {
+header#site-header hgroup a.p4logo, header#site-header hgroup a.ilogo {
   text-indent: -900em;
   display: inline-block;
   vertical-align: middle;
   height: 36px;
 }
 /* line 10, ../sass/partials/_index.sass */
-header#site-header section#intro a.p4logo {
+header#site-header hgroup a.p4logo {
   width: 217px;
   background: transparent url("../images/platform4_logo.png") center no-repeat;
 }
 /* line 13, ../sass/partials/_index.sass */
-header#site-header section#intro a.ilogo {
+header#site-header hgroup a.ilogo {
   width: 217px;
   background: #211e1f url("../images/illutron_logo.png") center no-repeat;
   -moz-border-radius: 3px;
@@ -92,7 +92,7 @@ header#site-header section#intro a.ilogo {
   border-radius: 3px;
 }
 /* line 19, ../sass/partials/_index.sass */
-header#site-header section#intro h1 {
+header#site-header hgroup h1 {
   font-size: 6em;
   font-weight: bold;
   font-family: Aclonica;
