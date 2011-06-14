@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load markup %}
+{% load thumbnail %}
 
 {% block content %}
 
@@ -62,6 +64,27 @@
 
 <h3>Sunday</h3>
 <p>...</p>-->
+</section>
+
+<section id="people">
+
+<hgroup>
+<h2>People</h2>
+<h3>Who is Wet Art 2011?</h3>
+</hgroup>
+
+{% for person in people %}
+    <article class="{% cycle '' 'last' %}">
+        {% thumbnail person.image "120x120" crop="center" as img %}
+            <figure><img src="{{ img.url }}" width="{{ img.width }}" width="{{ img.height }}"/></figure>
+        {% empty %}
+        {% endthumbnail %}
+
+        <h3>{{ person.name }}</h3>
+        {{ person.bio|markdown }}
+    </article>
+{% endfor %}
+
 </section>
 
 <section id="participate">

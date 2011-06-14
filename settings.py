@@ -19,7 +19,7 @@ if DEVELOPMENT_MODE:
     STATIC_URL = '/static/'
 else:
     DEBUG = False
-    MEDIA_URL = 'http://static.wetart.dk/'
+    MEDIA_URL = 'http://media.wetart.dk/'
     STATIC_URL = 'http://static.wetart.dk/'
     ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
@@ -72,6 +72,7 @@ INSTALLED_APPS = (
     'projects',
 
     'south',
+    'sorl.thumbnail',
 
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -80,6 +81,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'django.contrib.markup',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

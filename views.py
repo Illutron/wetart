@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from profiles.models import Profile
 
 
 def index(request):
-
-    return render(request, 'index.html')
+    profiles = Profile.objects.all()
+    return render(request, 'index.html', {'people': profiles})
