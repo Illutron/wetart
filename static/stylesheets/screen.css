@@ -240,15 +240,19 @@ section#people article figure {
   float: left;
   margin-right: 15px;
 }
+/* line 73, ../sass/partials/_index.sass */
+section#people article p {
+  margin-left: 135px;
+}
 
-/* line 75, ../sass/partials/_index.sass */
+/* line 77, ../sass/partials/_index.sass */
 footer#site-footer {
   border-top: 1px dashed black;
   text-align: center;
 }
-/* line 78, ../sass/partials/_index.sass */
+/* line 80, ../sass/partials/_index.sass */
 footer#site-footer p {
-  margin: 0 0 0 135px;
+  margin: 0;
 }
 
 /* line 5, ../sass/screen.sass */
