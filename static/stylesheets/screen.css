@@ -248,7 +248,7 @@ footer#site-footer {
 }
 /* line 78, ../sass/partials/_index.sass */
 footer#site-footer p {
-  margin: 0;
+  margin: 0 0 0 135px;
 }
 
 /* line 5, ../sass/screen.sass */

@@ -75,7 +75,7 @@
 
 {% for person in people %}
     <article class="{% cycle '' 'last' %}">
-        {% thumbnail person.image "120x120" crop="center" as img %}
+        {% thumbnail person.image "120x120" crop="top" as img %}
             <figure><img src="{{ img.url }}" width="{{ img.width }}" width="{{ img.height }}"/></figure>
         {% empty %}
         {% endthumbnail %}
