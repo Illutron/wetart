@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=artonwater,illutron&format=json&jsoncallback=?", function(data){
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=wetart2011&format=json&jsoncallback=?", function(data){
       $.each(data.items, function(i,item){
         $("<img/>").attr("src", item.media.m).appendTo("#flickrfeed")
           .wrap("<a href='" + item.link + "'></a>");
